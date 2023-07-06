@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('AlIkRa:server');
+var debug = require('debug')('alikra:server');
 var http = require('http');
 
 /**
