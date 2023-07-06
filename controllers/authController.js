@@ -1,6 +1,9 @@
 const users = require("../models/users");
+// Modul jsonwebtoken untuk menghasilkan dan memvalidasi token JSON Web.
 const jwt = require("jsonwebtoken");
+// Modul dotenv digunakan untuk mengonfigurasi variabel lingkungan dalam file .env
 const dotenv = require("dotenv");
+// Modul bcrypt digunakan untuk mengenkripsi dan memvalidasi kata sandi pengguna.
 const bcrypt = require("bcrypt");
 
 const login = async function (username, password) {
