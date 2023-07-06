@@ -2,6 +2,7 @@ var express = require("express");
 var Form = require("../models/forms");
 const { Op } = require("sequelize");
 
+// fungsi terkait pengelolaan formulir dalam aplikasi web
 function buatPin(length) {
   const charList =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
