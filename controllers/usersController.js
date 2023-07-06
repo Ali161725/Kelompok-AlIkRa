@@ -2,6 +2,7 @@ var express = require("express");
 var User = require("../models/users");
 const bcrypt = require("bcrypt");
 
+// pengelolaan pengguna dalam aplikasi web
 //list Users
 const listUsers = async function (req, res, next) {
   const users = await User.findAll({
