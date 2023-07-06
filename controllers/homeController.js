@@ -3,6 +3,7 @@ var User = require("../models/users");
 var Form = require("../models/forms");
 var Submissions = require("../models/submissions");
 
+// fungsi terkait halaman beranda dalam aplikasi web
 const homePage = async function (req, res, next) {
   const user_id = req.session.user_id;
   const submissions = await Submissions.findAll({
