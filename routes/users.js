@@ -1,3 +1,4 @@
+// menangani rute terkait pengguna dalam web
 var express = require("express");
 var router = express.Router();
 var mysql = require("mysql2");
