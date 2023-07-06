@@ -1,3 +1,4 @@
+// autentikasi token JSON Web dalam aplikasi web
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 const users = require("../models/users");
