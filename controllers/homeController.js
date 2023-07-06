@@ -1,6 +1,6 @@
 var express = require("express");
 var User = require("../models/users");
-var Form = require("../models/forms");
+var Form = require("../models/nilai");
 var Submissions = require("../models/submissions");
 
 // fungsi terkait halaman beranda dalam aplikasi web
