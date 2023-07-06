@@ -1,5 +1,5 @@
 var express = require("express");
-var Submissions = require("../models/submissions");
+var Submissions = require("../models/matkul");
 // const { Op } = require("sequelize");
 // fungsi terkait pengelolaan pengumpulan formulir dalam aplikasi web
 
