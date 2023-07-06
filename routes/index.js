@@ -1,3 +1,4 @@
+// menangani rute halaman dashboard dalam web
 var express = require("express");
 const { homePage } = require("../controllers/homeController");
 var router = express.Router();
