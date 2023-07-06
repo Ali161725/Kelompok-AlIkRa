@@ -1,6 +1,7 @@
 var express = require("express");
 var Submissions = require("../models/submissions");
 // const { Op } = require("sequelize");
+// fungsi terkait pengelolaan pengumpulan formulir dalam aplikasi web
 
 const listSubmissions = async function (req, res, next) {
   // const submissions = await Submissions.findAll();
