@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
-const sequilize = new Sequelize("mysql://root@localhost:3306/gpt-team");
+const sequilize = new Sequelize("mysql://root@localhost:3306/AlIkRa");
 
 const Submissions = sequilize.define(
   "Submissions",
