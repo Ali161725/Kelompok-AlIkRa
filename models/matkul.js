@@ -2,8 +2,8 @@ const { Sequelize, DataTypes } = require("sequelize");
 
 const sequilize = new Sequelize("mysql://root@localhost:3306/alikra");
 
-const Submissions = sequilize.define(
-  "Submissions",
+const matkul = sequilize.define(
+  "matkul",
   {
     user_id: {
       type: DataTypes.INTEGER,
@@ -41,16 +41,16 @@ const Submissions = sequilize.define(
     },
   },
   {
-    tableName: "submissions",
+    tableName: "matkul",
     timestamps: true,
     createdAt: "created_at",
     updatedAt: "updated_at",
   }
 );
 
-Submissions.associate = (models) => {
-  Submissions.belongsTo(models.Forms, { foreignKey: "form_Id" });
-  Submissions.belongsTo(models.User, { foreignKey: "user_Id" });
+matkul.associate = (models) => {
+  matkul.belongsTo(models.Forms, { foreignKey: "form_Id" });
+  matkul.belongsTo(models.User, { foreignKey: "user_Id" });
 };
 
-module.exports = Submissions;
+module.exports = matkul;
