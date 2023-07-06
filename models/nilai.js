@@ -2,8 +2,8 @@ const { Sequelize, DataTypes } = require("sequelize");
 
 const sequilize = new Sequelize("mysql://root@localhost:3306/alikra");
 
-const Forms = sequilize.define(
-  "Forms",
+const nilai = sequilize.define(
+  "nilai",
   {
     form_id: {
       type: DataTypes.STRING,
@@ -36,17 +36,17 @@ const Forms = sequilize.define(
     },
   },
   {
-    tableName: "forms",
+    tableName: "nilai",
     timestamps: true,
     createdAt: "created_at",
     updatedAt: "updated_at",
   }
 );
-Forms.prototype.getFormattedUpdatedAt = function() {
+nilai.prototype.getFormattedUpdatedAt = function() {
     const updatedDate = this.updated_at;
     return new Date(updatedDate).toLocaleDateString('id-ID', { day: '2-digit', month: '2-digit', year: 'numeric' });
 };//format tanggal
-Forms.associate = (models) => {
-  Forms.belongsTo(models.User, { foreignKey: "user_Id" });
+nilai.associate = (models) => {
+  nilai.belongsTo(models.User, { foreignKey: "user_Id" });
 };
-module.exports = Forms;
+module.exports = nilai;
