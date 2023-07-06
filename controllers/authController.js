@@ -1,3 +1,4 @@
+// autentifikasi pengguna
 const users = require("../models/users");
 // Modul jsonwebtoken untuk menghasilkan dan memvalidasi token JSON Web.
 const jwt = require("jsonwebtoken");
